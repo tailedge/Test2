@@ -8,12 +8,12 @@ import javax.servlet.annotation.WebListener;
 public class ContextListener implements ServletContextListener {
 
 	@Override
-	public void contextDestroyed(ServletContextEvent sce) {
+	public void contextDestroyed(ServletContextEvent servletContextEvent) {
 		System.out.println("*** context destroyed ***");
 	}
 
 	@Override
-	public void contextInitialized(ServletContextEvent sce) {
+	public void contextInitialized(ServletContextEvent servletContextEvent) {
 		System.out.println("*** context initialized ***");
 	}
 }
